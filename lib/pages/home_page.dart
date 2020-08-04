@@ -202,7 +202,7 @@ Widget menuDashboard() {
         color: Colors.pink[500],
       ),
       title: Text(
-        'switf',
+        'switch',
         style: TextStyle(fontSize: 18.0),
       ),
       onTap: () {

@@ -15,7 +15,7 @@ void data() {
   Widget build(BuildContext context) {
         data();
     return Container(
-      child: Text('ทดสอบบ'),
+      child: Text(''),
       
     );
   }
