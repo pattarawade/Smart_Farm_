@@ -80,3 +80,9 @@ flutter:
    - family: YanoneKaffeesatz-VariableFont_wght
      fonts:
      - asset: fonts/YanoneKaffeesatz-VariableFont_wght.ttf
+     - asset: fonts/YanoneKaffeesatz-Bold.ttf
+     - asset: fonts/YanoneKaffeesatz-ExtraLight.ttf
+     - asset: fonts/YanoneKaffeesatz-Light.ttf
+     - asset: fonts/YanoneKaffeesatz-Medium.ttf
+     - asset: fonts/YanoneKaffeesatz-Regular.ttf
+     - asset: fonts/YanoneKaffeesatz-Regular.ttf
