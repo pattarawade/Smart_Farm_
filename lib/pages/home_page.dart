@@ -197,12 +197,12 @@ Widget menuDashboard() {
   Widget menub1() {
     return ListTile(
       leading: Icon(
-        Icons.camera_alt,
+        Icons.phone_forwarded,
         size: 36.0,
         color: Colors.pink[500],
       ),
       title: Text(
-        'switch',
+        'Control',
         style: TextStyle(fontSize: 18.0),
       ),
       onTap: () {
@@ -258,12 +258,12 @@ Widget menuDashboard() {
    Widget menucamera() {
     return ListTile(
       leading: Icon(
-        Icons.camera_alt,
+        Icons.videocam,
         size: 36.0,
         color: Colors.pink[500],
       ),
       title: Text(
-        'Camera',
+        'Monitor',
         style: TextStyle(fontSize: 18.0),
       ),
       onTap: () {

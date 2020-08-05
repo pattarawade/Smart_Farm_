@@ -1,16 +1,12 @@
 
-
 import 'package:flutter/material.dart';
-
 import 'package:firebase_database/firebase_database.dart';
-
 
  class SwitchWidget extends StatefulWidget {
     @override
     SwitchWidgetClass createState() => new SwitchWidgetClass();
   }
-  
-class SwitchWidgetClass extends State {
+  class SwitchWidgetClass extends State {
 
     final databaseReference = FirebaseDatabase.instance.reference();
     int off=0;
@@ -165,7 +161,7 @@ class SwitchWidgetClass extends State {
 
       //hit Ctrl+space in intellij to know what are the options you can use in flutter widgets
       body: new Container(
-        padding: new EdgeInsets.all(32.0),
+        padding: new EdgeInsets.all(50.0),
         child: new Center(
           child: new Column(
             children: <Widget>[
@@ -174,8 +170,8 @@ class SwitchWidgetClass extends State {
               new SwitchListTile(
               onChanged: toggleSwitch,
               value: switchControl,
-              title : new Text('light', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
-              activeColor: Colors.black,
+              title : new Text('Light', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
+              activeColor: Colors.green,
               activeTrackColor: Colors.grey,
               inactiveThumbColor: Colors.white,
               inactiveTrackColor: Colors.grey),
@@ -183,8 +179,8 @@ class SwitchWidgetClass extends State {
                new SwitchListTile(
               onChanged: toggleSwitch2,
               value: switchControl2,
-              title : new Text('fan', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
-              activeColor: Colors.black,
+              title : new Text('Fan', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
+              activeColor: Colors.green,
               activeTrackColor: Colors.grey,
               inactiveThumbColor: Colors.white,
               inactiveTrackColor: Colors.grey),
@@ -192,8 +188,8 @@ class SwitchWidgetClass extends State {
                new SwitchListTile(
               onChanged: toggleSwitch3,
               value: switchControl3,
-              title : new Text('pump', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
-              activeColor: Colors.black,
+              title : new Text('Pump', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
+              activeColor: Colors.green,
               activeTrackColor: Colors.grey,
               inactiveThumbColor: Colors.white,
               inactiveTrackColor: Colors.grey
