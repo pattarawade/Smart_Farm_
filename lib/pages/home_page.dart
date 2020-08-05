@@ -197,9 +197,9 @@ Widget menuDashboard() {
   Widget menub1() {
     return ListTile(
       leading: Icon(
-        Icons.phone_forwarded,
+        Icons.phonelink_setup,
         size: 36.0,
-        color: Colors.pink[500],
+        color: Colors.black,
       ),
       title: Text(
         'Control',
@@ -258,7 +258,7 @@ Widget menuDashboard() {
    Widget menucamera() {
     return ListTile(
       leading: Icon(
-        Icons.videocam,
+        Icons.ondemand_video,
         size: 36.0,
         color: Colors.pink[500],
       ),
@@ -360,11 +360,12 @@ Widget menuDashboard() {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text('Smart App'),
+          title: new Text('Smart App',
+              style: new TextStyle(fontSize: 22.0, color: Colors.white, fontFamily: 'YanoneKaffeesatz-VariableFont_wght')),
           actions: <Widget>[
             new FlatButton(
                 child: new Text('Logout',
-                    style: new TextStyle(fontSize: 17.0, color: Colors.white)),
+                    style: new TextStyle(fontSize: 22.0, color: Colors.white, fontFamily: 'YanoneKaffeesatz-VariableFont_wght')),
                 onPressed: signOut)
           ],
         ),

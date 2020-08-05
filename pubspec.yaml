@@ -75,3 +75,8 @@ flutter:
   - images/cauliflower.png
   - images/farm.jpg
   - images/farm2.jpg
+
+  fonts:
+   - family: YanoneKaffeesatz-VariableFont_wght
+     fonts:
+     - asset: fonts/YanoneKaffeesatz-VariableFont_wght.ttf
