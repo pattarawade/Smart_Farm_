@@ -91,14 +91,14 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text('Flutter login '),
+          title: new Text('Login '),
         ),
         body: Stack(
           children: <Widget>[
             _showForm(),
             _showCircularProgress(),
           ],
-        ));
+        ), backgroundColor: Colors.green[100],);
   }
 
 
@@ -187,11 +187,11 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
     return new Hero(
       tag: 'hero',
       child: Padding(
-        padding: EdgeInsets.fromLTRB(0.0, 70.0, 0.0, 0.0),
+        padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
         child: CircleAvatar(
           backgroundColor: Colors.transparent,
-          radius: 48.0,
-          child: Image.asset('images/logo1.png'),
+          radius: 120.0,
+          child: Image.asset('images/logo.png'),
           
         ),
       ),
@@ -201,7 +201,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
 
   Widget showEmailInput() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0.0, 100.0, 0.0, 0.0),
+      padding: const EdgeInsets.fromLTRB(0.0, 40.0, 0.0, 0.0),
       child: new TextFormField(
         maxLines: 1,
         keyboardType: TextInputType.emailAddress,
@@ -210,7 +210,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
             hintText: 'Email',
             icon: new Icon(
               Icons.mail,
-              color: Colors.grey,
+              color: Colors.orange[100],size: 30.0,
             )),
         validator: (value) => value.isEmpty ? 'Email can\'t be empty' : null,
         onSaved: (value) => _email = value.trim(),
@@ -230,7 +230,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
             hintText: 'Password',
             icon: new Icon(
               Icons.lock,
-              color: Colors.grey,
+              color: Colors.yellow[100],size: 30.0,
             )),
         validator: (value) => value.isEmpty ? 'Password can\'t be empty' : null,
         onSaved: (value) => _password = value.trim(),
@@ -252,10 +252,10 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
         child: SizedBox(
           height: 40.0,
           child: new RaisedButton(
-            elevation: 5.0,
+            elevation: 2.0,
             shape: new RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(30.0)),
-            color: Colors.blue,
+                borderRadius: new BorderRadius.circular(50.0)),
+            color: Colors.teal,
             child: new Text(_isLoginForm ? 'Login' : 'Create account',
                 style: new TextStyle(fontSize: 20.0, color: Colors.white)),
             onPressed: validateAndSubmit,

@@ -320,21 +320,21 @@ Widget menuDashboard() {
           menuDashboard(),
           myDivider(),
 
-          menuDetail(),
-          myDivider(),
+          // menuDetail(),
+          // myDivider(),
 
-          menureadcloud(),
-          myDivider(),
+          // menureadcloud(),
+          // myDivider(),
 
-          menuread(),
-          myDivider(),
+          //menuread(),
+          // myDivider(),
 
           
-          menua1(),
-          myDivider(),
+          // menua1(),
+          // myDivider(),
 
-          menub(),
-          myDivider(),
+          // menub(),
+          // myDivider(),
           
           menub1(),
           myDivider(),
@@ -342,8 +342,8 @@ Widget menuDashboard() {
           menutime(),
           myDivider(),
            
-          menuonoff(),
-          myDivider(),
+          // menuonoff(),
+          // myDivider(),
 
           menucamera(),
           myDivider(),

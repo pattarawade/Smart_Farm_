@@ -216,7 +216,7 @@ class _DashboardState extends State<Dashboard>
                             Text(
                               '${humidityAnimation.value.toInt()}',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                  fontSize: 50, fontWeight: FontWeight.bold),
                             ),
                             Text(
                               '%',

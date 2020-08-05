@@ -14,11 +14,8 @@ class Setcontrol extends StatelessWidget {
     };
 
     return new MaterialApp(
-      title: 'Flutter Firebase CRUD app',
       home: new ItemScreen(),
-      theme: new ThemeData(
-        primaryColor: Colors.blue,
-      ),
+      
       routes: routes,
     );
   }

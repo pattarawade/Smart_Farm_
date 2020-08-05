@@ -20,7 +20,14 @@ class MyApp extends StatelessWidget {
         title: 'login demo',
         debugShowCheckedModeBanner: false,
         theme: new ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.teal,
+          primaryColor: Colors.teal,
+          
+          cursorColor: Colors.orange,
+          accentColor: Colors.red,
+         
+
+          fontFamily: 'YanoneKaffeesatz'
         ),
         home: new RootPage(auth: new Auth()));
   }
