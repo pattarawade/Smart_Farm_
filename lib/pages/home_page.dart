@@ -238,7 +238,7 @@ Widget menuDashboard() {
         size: 36.0,
         color: Colors.orange,
       ),
-      title: Text('SettingdateTime',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
+      title: Text('Setting Datetime',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
       ),
       onTap: () {
         setState(() {
