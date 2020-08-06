@@ -30,9 +30,9 @@ class ItemScreen extends StatefulWidget {
 class ItemState extends State<ItemScreen> {
   int noOfSelectedItems = 0;
   List<Item> selectedItems = new List();
-  AppBar appBar = getDefaultAppBar();
+  //AppBar appBar = getDefaultAppBar();
 
-  static getDefaultAppBar() => ( new AppBar(title: new Text("Item"),)); 
+  //static getDefaultAppBar() => ( new AppBar(title: new Text("Item"),)); 
 
   int onPress(bool selected, Item selectedItem) {
     setState(() {
@@ -46,9 +46,9 @@ class ItemState extends State<ItemScreen> {
     });
 
     if(noOfSelectedItems > 0) {
-        appBar = getSelectionAppBar();
+        //appBar = getSelectionAppBar();
     } else {
-      appBar = getDefaultAppBar();
+      //appBar = getDefaultAppBar();
     }
 
     return noOfSelectedItems;
@@ -112,7 +112,7 @@ class ItemState extends State<ItemScreen> {
     return ItemInheritedWidget(
       noOfSelectedItems : noOfSelectedItems,
       onPress : onPress,
-      appBar : appBar,
+      //appBar : appBar,
       child : ItemListStateful(),
     );
   }
@@ -207,6 +207,7 @@ class ItemList extends State<ItemListStateful> {
       buttons = new FloatingActionButton(
         onPressed: () => _openAddDialog(),
         child: new Icon(Icons.add),
+        backgroundColor: Colors.teal,
       );
     }
     

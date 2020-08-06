@@ -77,11 +77,9 @@ Widget menuDashboard() {
       leading: Icon(
         Icons.account_box,
         size: 36.0,
-        color: Colors.orange,
+        color: Colors.brown,
       ),
-      title: Text(
-        'Realtime Value',
-        style: TextStyle(fontSize: 18.0),
+      title: Text('Realtime Value',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
       ),
       onTap: () {
         setState(() {
@@ -202,8 +200,7 @@ Widget menuDashboard() {
         color: Colors.black,
       ),
       title: Text(
-        'Control',
-        style: TextStyle(fontSize: 18.0),
+        'Control',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
       ),
       onTap: () {
         setState(() {
@@ -223,9 +220,7 @@ Widget menuDashboard() {
         size: 36.0,
         color: Colors.pink[500],
       ),
-      title: Text(
-        'onoff1',
-        style: TextStyle(fontSize: 18.0),
+      title: Text('onoff1',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
       ),
       onTap: () {
         setState(() {
@@ -239,13 +234,11 @@ Widget menuDashboard() {
   Widget menutime() {
     return ListTile(
       leading: Icon(
-        Icons.camera_alt,
+        Icons.settings,
         size: 36.0,
-        color: Colors.pink[500],
+        color: Colors.orange,
       ),
-      title: Text(
-        'DateTimeP',
-        style: TextStyle(fontSize: 18.0),
+      title: Text('SettingdateTime',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
       ),
       onTap: () {
         setState(() {
@@ -260,11 +253,9 @@ Widget menuDashboard() {
       leading: Icon(
         Icons.ondemand_video,
         size: 36.0,
-        color: Colors.pink[500],
+        color: Colors.grey,
       ),
-      title: Text(
-        'Monitor',
-        style: TextStyle(fontSize: 18.0),
+      title: Text('Monitor',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght'),
       ),
       onTap: () {
         setState(() {
@@ -294,10 +285,7 @@ Widget menuDashboard() {
           ),
           Text(
             'smart app',
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 24.0,
-            ),
+            style: TextStyle(color: Colors.black,fontSize: 24.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght'),
           ),
         //  Text('Login by $nameString')
         ],

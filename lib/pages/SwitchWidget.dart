@@ -171,8 +171,8 @@ import 'package:firebase_database/firebase_database.dart';
               onChanged: toggleSwitch,
               value: switchControl,
               title : new Text('Light', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
-              activeColor: Colors.blueAccent,
-              activeTrackColor: Colors.blueAccent,
+              activeColor: Colors.teal,
+              activeTrackColor: Colors.teal,
               inactiveThumbColor: Colors.white,
               inactiveTrackColor: Colors.grey),
                
@@ -180,17 +180,17 @@ import 'package:firebase_database/firebase_database.dart';
               onChanged: toggleSwitch2,
               value: switchControl2,
               title : new Text('Fan', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
-              activeColor: Colors.blueAccent,
-              activeTrackColor: Colors.blueAccent,
+              activeColor: Colors.teal,
+              activeTrackColor: Colors.teal,
               inactiveThumbColor: Colors.white,
               inactiveTrackColor: Colors.grey),
 
                new SwitchListTile(
               onChanged: toggleSwitch3,
               value: switchControl3,
-              title : new Text('Pump', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
-              activeColor: Colors.blueAccent,
-              activeTrackColor: Colors.blueAccent,
+              title : new Text('waterpump', style: new TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
+              activeColor: Colors.teal,
+              activeTrackColor: Colors.teal,
               inactiveThumbColor: Colors.white,
               inactiveTrackColor: Colors.grey
               
