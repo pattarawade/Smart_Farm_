@@ -186,16 +186,17 @@ class _DashboardState extends State<Dashboard>
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text('Temperature'),
+                            Text('Temperature',style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),),
                             Text(
                               '${tempAnimation.value.toInt()}',
                               style: TextStyle(
-                                  fontSize: 50, fontWeight: FontWeight.bold),
+                                  fontSize: 50, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                             Text(
                               '°C',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                           ],
                         ),
@@ -204,7 +205,7 @@ class _DashboardState extends State<Dashboard>
                   ),
                   CustomPaint(
                     foregroundPainter:
-                        CircleProgress(humidityAnimation.value, false),
+                        CircleProgress(humidityAnimation.value, false,),
                     child: Container(
                       width: 200,
                       height: 200,
@@ -212,16 +213,17 @@ class _DashboardState extends State<Dashboard>
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text('Humidity'),
+                            Text('Humidity',style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),),
                             Text(
                               '${humidityAnimation.value.toInt()}',
                               style: TextStyle(
-                                  fontSize: 50, fontWeight: FontWeight.bold),
+                                  fontSize: 50, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                             Text(
                               '%',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                           ],
                         ),
@@ -238,16 +240,17 @@ class _DashboardState extends State<Dashboard>
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text('Soilmoisture'),
+                            Text('Soilmoisture',style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),),
                             Text(
                               '${soilAnimation.value.toInt()}',
                               style: TextStyle(
-                                  fontSize: 50, fontWeight: FontWeight.bold),
+                                  fontSize: 50, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                             Text(
                               '°C',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                           ],
                         ),
@@ -264,16 +267,17 @@ class _DashboardState extends State<Dashboard>
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text('Water Level'),
+                            Text('Water Level',style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),),
                             Text(
                               '${waterAnimation.value.toInt()}',
                               style: TextStyle(
-                                  fontSize: 50, fontWeight: FontWeight.bold),
+                                  fontSize: 50, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                             Text(
                               '%',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                  fontSize: 20, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
                             ),
                           ],
                         ),
@@ -285,7 +289,7 @@ class _DashboardState extends State<Dashboard>
               )
             : Text(
                 'Loading...',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
               ),
       )),
     );

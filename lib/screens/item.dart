@@ -19,10 +19,12 @@ final DatabaseReference itemRef =
 class ItemScreen extends StatefulWidget {
   // static String pageTitle = "Item";
   // static String routeName = "/item";
+  
 
   @override
   State<StatefulWidget> createState() {
     return new ItemState();
+    
   }
 }
 
@@ -30,6 +32,7 @@ class ItemScreen extends StatefulWidget {
 class ItemState extends State<ItemScreen> {
   int noOfSelectedItems = 0;
   List<Item> selectedItems = new List();
+  
   //AppBar appBar = getDefaultAppBar();
 
   //static getDefaultAppBar() => ( new AppBar(title: new Text("Item"),)); 
@@ -122,6 +125,7 @@ class ItemState extends State<ItemScreen> {
 class ItemInheritedWidget extends InheritedWidget {
 
   ItemInheritedWidget({
+
     Key key,
     this.noOfSelectedItems,
     this.onPress,
@@ -267,6 +271,7 @@ class ItemCard extends State<ItemCardStateful> {
         .of(context)
         .push(
           new MaterialPageRoute<Item>(
+            
             builder: (BuildContext context) {
               return new ItemForm.edit(item);
             },

@@ -75,9 +75,9 @@ class _HomePageState extends State<HomePage> {
 Widget menuDashboard() {
     return ListTile(
       leading: Icon(
-        Icons.account_box,
+        Icons.assessment,
         size: 36.0,
-        color: Colors.brown,
+        color: Colors.teal,
       ),
       title: Text('Realtime Value',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
       ),
@@ -197,7 +197,7 @@ Widget menuDashboard() {
       leading: Icon(
         Icons.phonelink_setup,
         size: 36.0,
-        color: Colors.black,
+        color: Colors.teal,
       ),
       title: Text(
         'Control',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
@@ -236,7 +236,7 @@ Widget menuDashboard() {
       leading: Icon(
         Icons.settings,
         size: 36.0,
-        color: Colors.orange,
+        color: Colors.teal,
       ),
       title: Text('Setting Datetime',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',),
       ),
@@ -253,7 +253,7 @@ Widget menuDashboard() {
       leading: Icon(
         Icons.ondemand_video,
         size: 36.0,
-        color: Colors.grey,
+        color: Colors.teal,
       ),
       title: Text('Monitor',style: TextStyle(fontSize: 18.0,fontFamily: 'YanoneKaffeesatz-VariableFont_wght'),
       ),

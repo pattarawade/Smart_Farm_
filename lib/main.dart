@@ -5,10 +5,7 @@ import 'package:flutter/services.dart';
 
 //import 'package:connectfirebase/pages/manu.dart';
 //import 'login_signup_page.dart';
-
-
 void main() {
-  
   runApp(new MyApp());
 }
 class MyApp extends StatelessWidget {
