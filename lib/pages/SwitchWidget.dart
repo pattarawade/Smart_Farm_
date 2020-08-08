@@ -149,7 +149,11 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
       print('2222222');
     }
 
-
+    var orange = Color(0xFFfc9f6a);
+    var pink = Color(0xFFee528c);
+    var blue = Color(0xFF8bccd6);
+    var darkBlue = Color(0xFF60a0d7);
+    var valueBlue = Color(0xFF5fa0d6);
   
     @override
     Widget build(BuildContext context) {
@@ -187,7 +191,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
                           value: switchControl,
                           title : new Text('Light', style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.black,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',)),
                           activeColor: Colors.teal,
-                          activeTrackColor: Colors.teal,
+                          activeTrackColor: Colors.teal[300],
                           inactiveThumbColor: Colors.white,
                           inactiveTrackColor: Colors.grey,
                           secondary: const Icon(Icons.lightbulb_outline,color: Colors.yellow,size: 30.0,),
@@ -212,9 +216,9 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
                        new SwitchListTile(
                           onChanged: toggleSwitch2,
                           value: switchControl2,
-                          title : new Text('Fan', style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.black,fontFamily: 'YanoneKaffeesatz-VariableFont_wght',)),
+                          title : new Text('Fan', style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.black, fontFamily: 'YanoneKaffeesatz-VariableFont_wght',)),
                           activeColor: Colors.teal,
-                          activeTrackColor: Colors.teal,
+                          activeTrackColor: Colors.teal[300],
                           inactiveThumbColor: Colors.white,
                           inactiveTrackColor: Colors.grey,
                           secondary: const Icon(Icons.toys_outlined,color: Colors.brown,size: 30.0,),
@@ -242,7 +246,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
                         value: switchControl3,
                         title : new Text('Waterpump', style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.black,fontFamily:'YanoneKaffeesatz-VariableFont_wght',)),
                         activeColor: Colors.teal,
-                        activeTrackColor: Colors.teal,
+                        activeTrackColor: Colors.teal[300],
                         inactiveThumbColor: Colors.white,
                         inactiveTrackColor: Colors.grey,
                         secondary: const Icon(Icons.invert_colors,color: Colors.blue,size: 30.0,),

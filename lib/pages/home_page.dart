@@ -348,13 +348,12 @@ Widget menuDashboard() {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text('Smart App',
-              style: new TextStyle(fontSize: 22.0, color: Colors.white, fontFamily: 'YanoneKaffeesatz-VariableFont_wght')),
-          actions: <Widget>[
+          title: new Center(child: new Text('Smart App',textAlign: TextAlign.center,
+              style: new TextStyle(fontSize: 25.0, color: Colors.white, fontFamily: 'YanoneKaffeesatz-VariableFont_wght'))),
+          actions: <Widget>[ 
             new FlatButton(
-                child: new Text('Logout',
-                    style: new TextStyle(fontSize: 22.0, color: Colors.white, fontFamily: 'YanoneKaffeesatz-VariableFont_wght')),
-                onPressed: signOut)
+                child: Icon(Icons.logout,color: Colors.white,)
+                ,onPressed: signOut)
           ],
         ),
       body: myWidget,
